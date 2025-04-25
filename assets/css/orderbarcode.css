@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Libre Barcode 39';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/LibreBarcode39-Regular.woff2') format('woff2');
+}
+
+.barcode39-with-label {
+    font-family: 'Libre Barcode 39', cursive;
+    font-size: 3.5em;
+    user-select: none;
+}
+
+#orderbarcode-search-form input[type="text"] {
+    width: 20%;
+}
+
+#orderbarcode-search-form input[type="text"] {
+    border: 2px solid #3b82f6; /* blue border */
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    color: #1e3a8a;
+    background-color: #fff8f0; /* light beige */
+    transition: border-color 0.3s ease;
+    width: 20%;
+}
+
+#orderbarcode-search-form input[type="text"]:focus {
+    border-color: #2563eb; /* brighter blue */
+    outline: none;
+    background-color: #ffffff;
+}
+
+#orderbarcode-search-form button {
+    background-color: #2563eb; /* blue */
+    color: #f5f1e9; /* beige */
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#orderbarcode-search-form button:hover {
+    background-color: #1e40af; /* darker blue */
+}
+
+#orderbarcode-latest-orders h2,
+#orderbarcode-order-details h2 {
+    color: #1e40af; /* dark blue */
+    border-bottom: 2px solid #f5f1e9;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+#orderbarcode-latest-list a {
+    color: #2563eb; /* blue */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#orderbarcode-latest-list a:hover {
+    color: #1e40af; /* darker blue */
+}
+
+#orderbarcode-items-list td {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d6cfc1; /* beige border */
+    color: #1e3a8a;
+    vertical-align: middle;
+}
+
+#orderbarcode-items-list tr:nth-child(even) {
+    background-color: #e9e4d4; /* lighter beige */
+}
